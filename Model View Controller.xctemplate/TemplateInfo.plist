@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.cosimoorlacchio.dt.unit.mvc</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+		<string>com.apple.dt.unit.sceneLifecycleApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses an MVC pattern</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>NameOfInitialFileForEditor</key>
+	<string>README_general.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>ViewController.h:comments</string>
+						<string>ViewController.h:imports:importCocoa</string>
+						<string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
+						<string>ViewController.m:comments</string>
+						<string>ViewController.m:imports:importHeader:ViewController.h</string>
+						<string>ViewController.m:extension</string>
+						<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+						<string>ViewController.m:implementation:methods:viewDidLoad:super</string>
+						<string>Info.plist:UIMainStoryboardFile</string>
+						<string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+						<string>Base.lproj/Main.storyboard</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main.storyboard</string>
+							<key>SortOrder</key>
+							<integer>98</integer>
+						</dict>
+						<key>Info.plist:UIMainStoryboardFile</key>
+						<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+                            &lt;string&gt;Main&lt;/string&gt;
+                        </string>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Controller/ViewController.swift:comments</string>
+							<string>Controller/ViewController.swift:imports:importCocoa</string>
+							<string>Controller/ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
+							<string>Controller/ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>Controller/ViewController.swift:implementation:methods:viewDidLoad:super</string>
+							<string>Info.plist:UIMainStoryboardFile</string>
+							<string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+							<string>README_general.swift</string>
+							<string>Controller/README_controller.swift</string>
+							<string>Model/README_model.swift</string>
+							<string>Supporting Files/Extensions/README_extensions.swift</string>
+							<string>Supporting Files/Extensions/String+Ext.swift</string>
+							<string>Supporting Files/Protocols/README_protocols.swift</string>
+							<string>Supporting Files/Localizations/README_localizations.swift</string>
+							<string>Supporting Files/Localizations/Localizable.strings</string>
+							<string>View/XIBs/README_XIBs.swift</string>
+							<string>View/Storyboards/README_storyboards.swift</string>
+							<string>View/UIKit Subclasses/README_UIKit_subclasses.swift</string>
+							<string>View/Storyboards/Base.lproj/Main.storyboard</string>
+							<string>Model/Core Data/README_coredata.swift</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>View/Storyboards/README_storyboards.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+
+Group storyboards by feature in subfolders and link them to the Main.storyboard with UIStoryboardSegues
+</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_storyboards.swift</string>
+								<key>Group</key>
+								<array>
+									<string>View</string>
+									<string>Storyboards</string>
+								</array>
+								<key>SortOrder</key>
+								<integer>98</integer>
+							</dict>
+							<key>Model/Core Data/README_coredata.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+ Here you can find the default core data model if you&apos;ve selected the checkbox &quot;Use Core Data&quot;</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_coredata.swift</string>
+								<key>Group</key>
+								<array>
+									<string>Model</string>
+									<string>Core Data</string>
+								</array>
+							</dict>
+							<key>View/Storyboards/Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>View</string>
+									<string>Storyboards</string>
+								</array>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>99</integer>
+							</dict>
+							<key>View/UIKit Subclasses/README_UIKit_subclasses.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+
+Use this folder for classes that inherit from UIKit classes
+In case there are many classes group them in subfolders according to the class or group of classes they derive from
+e.g. cells (tableview and collectionview), button, labels, textfields
+
+You can override the method layoutSubviews to setup your custom view&apos;s background and text color, font size and alignment, corner radius, etc.
+</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_UIKit_subclasses.swift</string>
+								<key>Group</key>
+								<array>
+									<string>View</string>
+									<string>UIKit Subclasses</string>
+								</array>
+							</dict>
+							<key>View/XIBs/README_XIBs.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+
+Custom reusable views in XIB files, grouped by feature</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_XIBs.swift</string>
+								<key>Group</key>
+								<array>
+									<string>View</string>
+									<string>XIBs</string>
+								</array>
+							</dict>
+							<key>README_general.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+ Include inheritance and all protocol conformances at the beginning of the file, where the class is defined
+ In this way it&apos;s wasy to have a quick and clear idea of what the class does without scrolling down
+ Divide each file with MARKs to separate different sections in a logical and easy to understand way
+
+ e.g. See how to structure a ViewController in ./Controller/README_controller.swift
+
+ */
+
+/*
+ Comment each property or class with a brief description of what its purpose
+
+ Comment each method with the following structure, according to Swift Markup:
+
+    Description
+    A section for each Parameter
+    A Returns section for non-void methods
+ </string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_general.swift</string>
+							</dict>
+							<key>Controller/README_controller.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/**
+
+ Group controllers by feature in subfolders.
+
+ A ViewController could be structured in these sections:
+
+ // MARK: - Outlets
+
+ // MARK: - Properties
+ Both stored and computed, but not linked to a view file like outlets
+
+ // MARK: - ViewController Lifecycle
+ All methods like viewWillAppear, viewDidAppear, viewDidLoad, etc.
+
+ // MARK: - Actions
+ All callbacks actionable through interaction on views
+
+ A MARK for superclass overrides
+
+ A MARK for each protocol conformance
+
+ A MARK for each group of features</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_controller.swift</string>
+								<key>Group</key>
+								<array>
+									<string>Controller</string>
+								</array>
+								<key>SortOrder</key>
+								<string>99</string>
+							</dict>
+							<key>Controller/ViewController.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Controller</string>
+								</array>
+								<key>Path</key>
+								<string>ViewController.swift</string>
+								<key>SortOrder</key>
+								<string>100</string>
+							</dict>
+							<key>Supporting Files/Extensions/String+Ext.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>import Foundation
+
+extension String {
+
+    /**
+     This property computes the localized version of this string according to the current language
+     - Returns: Localized version of self
+     */
+    var localized: String {
+        return NSLocalizedString(self, comment: &quot;&quot;)
+    }
+
+    /**
+     This property computes the localized version of this string according to the current language
+     - Parameter arguments: List of arguments to insert inside the string, where placeholders are identified by %@
+     - Returns: Localized version of self
+     */
+    func localizeWithFormat(arguments: CVarArg...) -&gt; String {
+        return String(format: self.localized, arguments: arguments)
+    }</string>
+								<key>End</key>
+								<string>}</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>String+Ext.swift</string>
+								<key>Group</key>
+								<array>
+									<string>Supporting Files</string>
+									<string>Extensions</string>
+								</array>
+							</dict>
+							<key>Supporting Files/Localizations/Localizable.strings</key>
+							<dict>
+								<key>Path</key>
+								<string>Localizable.strings</string>
+								<key>Group</key>
+								<array>
+									<string>Supporting Files</string>
+									<string>Localizations</string>
+								</array>
+							</dict>
+							<key>Supporting Files/Localizations/README_localizations.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+
+ Divide with MARKs the sections of the localization file.
+ Use a MARK for each feature or group of feature of the application (e.g. Login, Home, Profile, Camera, etc.)
+ To ease the localization process remember to write the localized strings for all the supported languages each time you create a new class
+
+ IMPORTANT: TUse the methods in the String extension contained in ../Extensions/String+Ext.swift, e.g. &quot;alert.action.ok&quot;.localized
+
+ Name localization keys according to the following syntax:
+    feature.uielement.name.[subtitle]
+    e.g. authentication.button.signup
+    e.g. authentication.navigationitem.chooseusername
+    e.g. alert.error.badcredentials.message
+    e.g. alert.action.opencamera</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_localizations.swift</string>
+								<key>Group</key>
+								<array>
+									<string>Supporting Files</string>
+									<string>Localizations</string>
+								</array>
+							</dict>
+							<key>Supporting Files/Extensions/README_extensions.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+
+ Create a file for each framework, native or third parties (e.g. UIKit, Primitive Types, Alamofire, etc.)
+ In each file group methods and computed properties by class</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Path</key>
+								<string>README_extensions.swift</string>
+								<key>Group</key>
+								<array>
+									<string>Supporting Files</string>
+									<string>Extensions</string>
+								</array>
+							</dict>
+							<key>Model/README_model.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+Put in this folder all classes create to support the model of your data
+e.g. classes representing objects fetched from local and remote DB tables
+e.g. singletons to manage network calls, constants, configuration parameters
+e.g. static containers of data such as json files
+</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Group</key>
+								<array>
+									<string>Model</string>
+								</array>
+								<key>Path</key>
+								<string>README_model.swift</string>
+							</dict>
+							<key>Supporting Files/Protocols/README_protocols.swift</key>
+							<dict>
+								<key>Beginning</key>
+								<string>/*
+Create a file for each protocol used in different parts of the application.
+If some protocols are related group them in a folder.
+</string>
+								<key>End</key>
+								<string>*/</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>Group</key>
+								<array>
+									<string>Supporting Files</string>
+									<string>Protocols</string>
+								</array>
+								<key>Path</key>
+								<string>README_protocols.swift</string>
+							</dict>
+							<key>Info.plist:UIMainStoryboardFile</key>
+							<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+                            &lt;string&gt;Main&lt;/string&gt;
+                        </string>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ContentView.swift</string>
+							<string>Preview Content/Preview Assets.xcassets</string>
+							<string>SceneDelegate.swift:imports:importSwiftUI</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body:windowScene</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>ContentView.swift</key>
+							<dict>
+								<key>SortOrder</key>
+								<integer>99</integer>
+								<key>Path</key>
+								<string>ContentView.swift</string>
+							</dict>
+							<key>Preview Content/Preview Assets.xcassets</key>
+							<dict>
+								<key>SortOrder</key>
+								<integer>100</integer>
+								<key>Path</key>
+								<string>Preview Assets.xcassets</string>
+								<key>Group</key>
+								<string>Preview Content</string>
+							</dict>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>
+// Create the SwiftUI view that provides the window contents.
+let contentView = ContentView()
+</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body:windowScene</key>
+							<string>
+// Use a UIHostingController as window root view controller.
+if let windowScene = scene as? UIWindowScene {
+    let window = UIWindow(windowScene: windowScene)
+    window.rootViewController = UIHostingController(rootView: contentView)
+    self.window = window
+    window.makeKeyAndVisible()
+}</string>
+							<key>*:imports:importSwiftUI</key>
+							<string>import SwiftUI</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>ENABLE_PREVIEWS</key>
+									<string>YES</string>
+									<key>DEVELOPMENT_ASSET_PATHS</key>
+									<string>___PACKAGENAMEPREVIEWCONTENT:quoteIfNeeded___</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+							<key>coreData</key>
+							<string>true</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>
+// Get the managed object context from the shared persistent container.
+let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
+// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
+let contentView = ContentView().environment(\.managedObjectContext, context)
+</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>User Interface:</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Values</key>
+			<array>
+				<string>SwiftUI</string>
+				<string>Storyboard</string>
+			</array>
+			<key>RequiredOptionsForValues</key>
+			<dict>
+				<key>SwiftUI</key>
+				<dict>
+					<key>languageChoice</key>
+					<string>Swift</string>
+				</dict>
+			</dict>
+			<key>Default</key>
+			<string>SwiftUI</string>
+			<key>Type</key>
+			<string>popup</string>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:iPhone</string>
+		<string>Info.plist:UIRequiredDeviceCapabilities:base</string>
+		<string>Info.plist:LaunchScreen</string>
+		<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+		<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+		<string>Assets.xcassets</string>
+		<string>Base.lproj/LaunchScreen.storyboard</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:iPhone</key>
+		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
+&lt;true/&gt;
+</string>
+		<key>Info.plist:UIRequiredDeviceCapabilities</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
+&lt;array&gt;</string>
+			<key>End</key>
+			<string>&lt;/array&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>Info.plist:UIRequiredDeviceCapabilities:base</key>
+		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
+		<key>Info.plist:statusBarTintForNavBar</key>
+		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;UINavigationBar&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Style&lt;/key&gt;
+        &lt;string&gt;UIBarStyleDefault&lt;/string&gt;
+        &lt;key&gt;Translucent&lt;/key&gt;
+        &lt;false/&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+		<key>Info.plist:LaunchScreen</key>
+		<string>&lt;key&gt;UILaunchStoryboardName&lt;/key&gt;
+&lt;string&gt;LaunchScreen&lt;/string&gt;
+</string>
+		<key>Assets.xcassets</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>View</string>
+			</array>
+			<key>Path</key>
+			<string>Images.xcassets</string>
+			<key>AssetGeneration</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>appicon</string>
+					<key>Name</key>
+					<string>AppIcon</string>
+					<key>Platforms</key>
+					<dict>
+						<key>iOS</key>
+						<string>true</string>
+					</dict>
+				</dict>
+			</array>
+			<key>SortOrder</key>
+			<integer>100</integer>
+		</dict>
+		<key>Base.lproj/LaunchScreen.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>Group</key>
+			<array>
+				<string>View</string>
+				<string>Storyboards</string>
+			</array>
+			<key>SortOrder</key>
+			<integer>100</integer>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+			<key>Group</key>
+			<array>
+				<string>Model</string>
+				<string>Core Data</string>
+			</array>
+		</dict>
+		<key>*:implementation:methods:applicationWillResignActive:comments</key>
+		<string>// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+// Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+</string>
+		<key>*:implementation:methods:applicationDidEnterBackground:comments</key>
+		<string>// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+</string>
+		<key>*:implementation:methods:applicationWillEnterForeground:comments</key>
+		<string>// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.</string>
+		<key>*:implementation:methods:applicationDidBecomeActive:comments</key>
+		<string>// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.</string>
+	</dict>
+</dict>
+</plist>
